@@ -1,4 +1,4 @@
-package com.nixsolutions.controller;
+package com.nixsolutions.web.controller;
 
 import com.nixsolutions.dto.UserDTO;
 import com.nixsolutions.model.Role;

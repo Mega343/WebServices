@@ -1,4 +1,4 @@
-package com.nixsolutions.controller.book;
+package com.nixsolutions.web.controller.book;
 
 import com.nixsolutions.model.*;
 import com.nixsolutions.dto.BookDTO;

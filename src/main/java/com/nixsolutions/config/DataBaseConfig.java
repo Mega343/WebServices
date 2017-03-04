@@ -15,7 +15,7 @@ import java.util.Properties;
 
 @Configuration
 @EnableTransactionManagement
-@ComponentScan("com.nixsolutions")
+@ComponentScan(value = {"com.nixsolutions.config", "com.nixsolutions.dao", "com.nixsolutions.service"})
 public class DataBaseConfig {
 
     @Bean

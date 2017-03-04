@@ -1,4 +1,4 @@
-package com.nixsolutions.controller.order;
+package com.nixsolutions.web.controller.order;
 
 import com.nixsolutions.model.Book;
 import com.nixsolutions.model.Order;

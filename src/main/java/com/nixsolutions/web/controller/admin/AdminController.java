@@ -1,4 +1,4 @@
-package com.nixsolutions.controller.admin;
+package com.nixsolutions.web.controller.admin;
 
 import com.nixsolutions.model.*;
 import com.nixsolutions.dto.UserDTO;

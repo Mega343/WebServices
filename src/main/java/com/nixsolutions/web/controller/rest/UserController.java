@@ -1,4 +1,4 @@
-package com.nixsolutions.controller.rest;
+package com.nixsolutions.web.controller.rest;
 
 import com.nixsolutions.model.User;
 import com.nixsolutions.service.UserService;
