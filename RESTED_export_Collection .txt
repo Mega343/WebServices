@@ -1,0 +1,86 @@
+{
+  "id": "e5d5547e-59c3-6ac2-3680-d5a0e8ee05e1",
+  "name": "Collection ",
+  "requests": [
+    {
+      "id": "570df131-8eff-4080-d378-ccc8e0400eec",
+      "collectionId": "e5d5547e-59c3-6ac2-3680-d5a0e8ee05e1",
+      "method": "GET",
+      "url": "localhost:8080/rest/user/1",
+      "headers": "\n",
+      "data": [],
+      "dataMode": "raw",
+      "rawModeData": []
+    },
+    {
+      "id": "2e9a34b2-5646-5de6-dc91-c52797a553d3",
+      "collectionId": "e5d5547e-59c3-6ac2-3680-d5a0e8ee05e1",
+      "method": "GET",
+      "url": "localhost:8080/rest/user/10",
+      "headers": "\n",
+      "data": [],
+      "dataMode": "raw",
+      "rawModeData": []
+    },
+    {
+      "id": "f169b2e5-03c8-de44-738c-b222d07024e8",
+      "collectionId": "e5d5547e-59c3-6ac2-3680-d5a0e8ee05e1",
+      "method": "DELETE",
+      "url": "localhost:8080/rest/user/1",
+      "headers": "\n",
+      "data": [],
+      "dataMode": "raw",
+      "rawModeData": []
+    },
+    {
+      "id": "36b16aa3-14af-9aa4-b5f7-a63fe9d4f154",
+      "collectionId": "e5d5547e-59c3-6ac2-3680-d5a0e8ee05e1",
+      "method": "DELETE",
+      "url": "localhost:8080/rest/user/7",
+      "headers": "\n",
+      "data": [],
+      "dataMode": "raw",
+      "rawModeData": []
+    },
+    {
+      "id": "81313ce4-5150-c161-4f6f-89bd198db6b7",
+      "collectionId": "e5d5547e-59c3-6ac2-3680-d5a0e8ee05e1",
+      "method": "POST",
+      "url": "localhost:8080/rest/user/add",
+      "headers": "Content-Type: application/json\n",
+      "data": [],
+      "dataMode": "raw",
+      "rawModeData": "{\n    \"firstName\": \"Ivan\",\n    \"lastName\": \"Ivanov\",\n    \"email\": \"ivanov123@mail.ru\",\n    \"password\": \"qwerty\",\n    \"phoneNumber\": \"+380501234967\",\n    \"userRole\": \"Admin\"\n}"
+    },
+    {
+      "id": "cb82cccb-797b-a74d-4584-7f11da812cd2",
+      "collectionId": "e5d5547e-59c3-6ac2-3680-d5a0e8ee05e1",
+      "method": "GET",
+      "url": "localhost:8080/rest/user/8",
+      "headers": "Content-Type: application/json\n",
+      "data": [],
+      "dataMode": "raw",
+      "rawModeData": []
+    },
+    {
+      "id": "6d7405b1-2385-f370-2d36-3ff634bf8753",
+      "collectionId": "e5d5547e-59c3-6ac2-3680-d5a0e8ee05e1",
+      "method": "POST",
+      "url": "localhost:8080/rest/user/update",
+      "headers": "Content-Type: application/json\n",
+      "data": [],
+      "dataMode": "raw",
+      "rawModeData": "{\n    \"userID\": 8,\n    \"firstName\": \"Ivan\",\n    \"lastName\": \"Ivanov\",\n    \"email\": \"ivanov123@mail.ru\",\n    \"password\": \"qwerty\",\n    \"confirmPassword\": \"qwerty\",\n    \"phoneNumber\": \"+380501234967\",\n    \"karma\": 20,\n    \"userRole\": \"Admin\",\n    \"addressID\": 8,\n    \"houseNumber\": \"25B\",\n    \"flatNumber\": \"34\",\n    \"cityName\": \"Kharkiv\",\n    \"streetName\": \"23 Augusta\",\n    \"documentID\": 8,\n    \"documentType\": \"Passport\",\n    \"series\": \"BA\",\n    \"number\": 123456,\n    \"issuedBy\": \"GMVS\",\n    \"dateOfIssue\": \"2006-12-30\"\n}"
+    },
+    {
+      "id": "b2fd524c-de5f-7dac-7d87-24765d607019",
+      "collectionId": "e5d5547e-59c3-6ac2-3680-d5a0e8ee05e1",
+      "method": "GET",
+      "url": "localhost:8080/rest/user/8",
+      "headers": "Content-Type: application/json\n",
+      "data": [],
+      "dataMode": "raw",
+      "rawModeData": []
+    }
+  ]
+}

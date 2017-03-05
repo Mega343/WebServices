@@ -62,6 +62,9 @@ public class UserDTO {
                         userDTO.getStreetName()), new Document(userDTO.getDocumentID(), new DocumentType(userDTO.getDocumentType()),
                 userDTO.getSeries(), userDTO.getNumber(), userDTO.getIssuedBy(), userDTO.getDateOfIssue()));
         user.setUserID(userDTO.getUserID());
+        if(user.getKarma() == null) {
+            user.setKarma(0);
+        }
         return user;
     }
 

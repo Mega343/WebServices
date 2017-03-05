@@ -1,7 +1,6 @@
 package com.nixsolutions.model;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 @Entity
@@ -12,7 +11,6 @@ public class DocumentType implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "document_type_id")
     private Integer documentTypeID;
-    @NotNull
     @Column(name = "document_type")
     private String documentType;
 

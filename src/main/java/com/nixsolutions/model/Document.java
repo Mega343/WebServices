@@ -2,7 +2,6 @@ package com.nixsolutions.model;
 
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.sql.Date;
 @Entity
@@ -16,16 +15,12 @@ public class Document implements Serializable {
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "document_type_id", referencedColumnName = "document_type_id")
     private DocumentType documentType;
-    @NotNull
     @Column(name = "series")
     private String series;
-    @NotNull
     @Column(name = "number")
     private Integer number;
-    @NotNull
     @Column(name = "issued_by")
     private String issuedBy;
-    @NotNull
     @Column(name = "date_of_issue")
     private Date dateOfIssue;
 

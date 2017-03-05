@@ -2,7 +2,6 @@ package com.nixsolutions.model;
 
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 @Entity
@@ -13,15 +12,12 @@ public class Address implements Serializable {
     @Column(name = "address_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long addressID;
-    @NotNull
     @Column(name = "house_number")
     private String houseNumber;
     @Column(name = "flat_number")
     private String flatNumber;
-    @NotNull
     @Column(name = "city_name")
     private String cityName;
-    @NotNull
     @Column(name = "street_name")
     private String streetName;
 
