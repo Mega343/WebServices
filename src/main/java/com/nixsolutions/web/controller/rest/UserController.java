@@ -1,18 +1,14 @@
 package com.nixsolutions.web.controller.rest;
 
+import com.nixsolutions.dto.UserDTO;
 import com.nixsolutions.model.User;
 import com.nixsolutions.service.UserService;
 import com.nixsolutions.web.controller.rest.exception.UserControllerException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
-import javax.ws.rs.core.Response.Status;
-import javax.ws.rs.ext.ExceptionMapper;
-import javax.ws.rs.ext.Provider;
 
 @Controller
 @Path("/user")
@@ -36,16 +32,20 @@ public class UserController {
 
     @POST
     @Path("/add")
+    @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.TEXT_PLAIN)
-    public String saveUser(@RequestBody User user) {
+    public String saveUser(UserDTO userDTO) {
+        User user = UserDTO.getUser(userDTO);
         userService.add(user);
         return user.getUserID().toString();
     }
 
     @POST
     @Path("/update")
+    @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.TEXT_PLAIN)
-    public String updateUser(@RequestBody User user) {
+    public String updateUser(UserDTO userDTO) {
+        User user = UserDTO.getUser(userDTO);
         userService.edit(user);
         return user.getUserID().toString();
     }

@@ -69,7 +69,7 @@ http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
     </servlet>
     
     <servlet-mapping>
-        <servlet-name>jersey-servlet</servlet-name>
+        <servlet-name>jersey-serlvet</servlet-name>
         <url-pattern>/rest/*</url-pattern>
     </servlet-mapping>
 
