@@ -1,7 +1,9 @@
 package com.nixsolutions.web.controller.rest;
 
 import com.nixsolutions.dto.UserDTO;
+import com.nixsolutions.model.Role;
 import com.nixsolutions.model.User;
+import com.nixsolutions.service.RoleService;
 import com.nixsolutions.service.UserService;
 import com.nixsolutions.web.controller.rest.exception.UserControllerException;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +18,8 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+    @Autowired
+    private RoleService roleService;
 
     @GET
     @Path("{user_id}")
@@ -36,6 +40,9 @@ public class UserController {
     @Produces(MediaType.TEXT_PLAIN)
     public String saveUser(UserDTO userDTO) {
         User user = UserDTO.getUser(userDTO);
+        Role role = roleService.getRoleByName(userDTO.getUserRole());
+        user.setRole(role);
+        user.setKarma(0);
         userService.add(user);
         return user.getUserID().toString();
     }

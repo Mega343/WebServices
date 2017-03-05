@@ -42,7 +42,7 @@ public class RegistrationController {
                     model.addAttribute("msg", "You have successfully registered.");
                     return "index";
                 } catch (Exception e) {
-                    model.addAttribute("error", "Error. User with that email or phone number already registered!");
+                    model.addAttribute("error", "Error. User with that email or phone number already registered!" + " " + e.getMessage());
                     return "registration";
                 }
             }
