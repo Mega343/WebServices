@@ -14,4 +14,15 @@
     <context:component-scan base-package="com.nixsolutions.web.controller.soap" />
     <sws:annotation-driven />
 
+    <bean id="defaultWsdl11Definition" class="org.springframework.ws.wsdl.wsdl11.DefaultWsdl11Definition">
+        <property name="schema">
+            <bean class="org.springframework.xml.xsd.SimpleXsdSchema">
+                <property name="xsd" value="schemas/UserDetails.xsd"/>
+            </bean>
+        </property>
+        <property name="portTypeName" value="UserPort"/>
+        <property name="locationUri" value="/soap"/>
+        <property name="targetNamespace" value="http://localhost:8080/soap"/>
+    </bean>
+
 </beans>

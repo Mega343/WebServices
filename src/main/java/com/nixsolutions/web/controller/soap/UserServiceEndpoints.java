@@ -19,7 +19,7 @@ import java.sql.Date;
 @Endpoint
 public class UserServiceEndpoints {
 
-    private static final String TARGET_NAMESPACE = "http://localhost:8080/soap";
+    private static final String TARGET_NAMESPACE = "http://localhost:8080/soap/";
 
     @Autowired
     private UserService userService;

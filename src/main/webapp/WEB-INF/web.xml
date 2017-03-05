@@ -103,11 +103,6 @@ http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
 
     <servlet-mapping>
         <servlet-name>webservices</servlet-name>
-        <url-pattern>*.wsdl</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>webservices</servlet-name>
         <url-pattern>/soap/*</url-pattern>
     </servlet-mapping>
 
